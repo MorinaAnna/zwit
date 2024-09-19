@@ -12,16 +12,58 @@
             background-color: #F7E7CE;
         }
 
-        .container {
+        /* Заголовок і фото */
+        .header-container {
             display: flex;
-            margin-bottom: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #F7E7CE;
+            border-bottom: 1px solid #000;
+            position: relative;
         }
 
+        .header {
+            text-align: center;
+            margin-right: 150px; /* Щоб змістити заголовок правіше */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        .header p {
+            margin: 5px 0;
+        }
+
+        .photo-student {
+            width: 120px; /* Зменшення розміру фото */
+            height: 120px; /* Зменшення розміру фото */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            position: absolute;
+            right: 20px;
+            overflow: hidden;
+            border-radius: 50%; /* Робить фото круглим */
+            border: 1px solid #000;
+        }
+
+        .photo-student img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Вкладки */
         .tabs {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 10px;
+            justify-content: center;
+            gap: 5px;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
         }
 
         .tabs button {
@@ -29,59 +71,72 @@
             border: 1px solid #000;
             background-color: #f9f9f9;
             cursor: pointer;
+            border-radius: 8px;
+            font-size: 14px;
+            flex: 1;
         }
 
         .tabs button.active {
             background-color: #EFAF8C;
         }
 
+        /* Контейнер для контенту */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        /* Бокова панель */
         .sidebar {
-            width: 300px;
+            width: 250px;
             border: 1px solid #000;
             padding: 10px;
             margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .sidebar button {
-            display: block;
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
-            text-align: left;
             border: 1px solid #000;
             background-color: #f9f9f9;
             cursor: pointer;
+            text-align: left;
+            border-radius: 25px; /* Робимо кнопки овальними */
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            min-height: 50px; /* Встановлюємо однакову висоту для кнопок */
         }
 
+        /* Основний контент */
         .main-content {
             flex-grow: 1;
             border: 1px solid #000;
             padding: 10px;
-            min-height: 200px;
             background-color: #ffffff;
+            min-height: 300px;
         }
 
-        .photo-student {
-            border: 1px solid #000;
-            width: 150px;
-            height: 150px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f9f9f9;
-            margin-left: 10px;
-        }
-
-        .photo-student img {
-            max-width: 100%;
-            max-height: 100%;
-        }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <!-- Заголовок та фото студента -->
+    <div class="header-container">
+        <div class="header">
+            <h1>ЗВІТ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ<br>"ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЄКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+            <p>Студентка групи ІС-33</p>
+            <p>Моріна Анна Володимирівна</p>
+        </div>
+        <div class="photo-student">
+            <img src="photoweb.jpg" alt="Фото студента">
+        </div>
+    </div>
+
+    <!-- Вкладки лабораторних робіт -->
     <div class="tabs">
         <button class="active" onclick="showContent('lab1')">Лабораторна робота №1</button>
         <button onclick="showContent('lab2')">Лабораторна робота №2</button>
@@ -93,99 +148,59 @@
         <button onclick="showContent('lab8')">Лабораторна робота №8</button>
         <button onclick="showContent('lab9')">Лабораторна робота №9</button>
     </div>
-    <div class="photo-student">
-        <img src="photoweb.jpg" alt="Фото студента">
-    </div>
-</div>
 
-<div class="container">
-    <div class="sidebar">
-        <button onclick="showSection('description')">Опис предметного середовища</button>
-        <button onclick="showSection('theme')">Тема Мета Місце розташування лаб №1</button>
-        <button onclick="showSection('structure')">СТРУКТУРА ДОКУМЕНТА</button>
-        <button onclick="showSection('htmlTable')">HTML-код ТАБЛИЦЬ</button>
-        <button onclick="showSection('htmlForm')">HTML-код ФОРМИ</button>
-        <button onclick="showSection('htmlImages')">HTML-код ЗОБРАЖЕННЯ</button>
-        <button onclick="showSection('conclusions')">ВИСНОВКИ</button>
-    </div>
-    <div class="main-content" id="content">
-        Місце виведення інформації
-    </div>
-</div>
+    <!-- Основний контент -->
+    <div class="container">
+        <!-- Бокова панель -->
+        <div class="sidebar">
+            <button onclick="showSection('description')">Опис предметного середовища</button>
+            <button onclick="showSection('theme')">Тема Мета Місце розташування лаб №1</button>
+            <button onclick="showSection('structure')">СТРУКТУРА ДОКУМЕНТА</button>
+            <button onclick="showSection('htmlTable')">HTML-код ТАБЛИЦЬ</button>
+            <button onclick="showSection('htmlForm')">HTML-код ФОРМИ</button>
+            <button onclick="showSection('htmlImages')">HTML-код ЗОБРАЖЕННЯ</button>
+            <button onclick="showSection('conclusions')">ВИСНОВКИ</button>
+        </div>
 
-<script>
-    // Функція для показу вмісту лабораторної роботи
-    function showContent(labNumber) {
-        // Оновлюємо активну вкладку
-        const tabs = document.querySelectorAll('.tabs button');
-        tabs.forEach(tab => tab.classList.remove('active'));
-        const activeTab = document.querySelector(`.tabs button[onclick="showContent('${labNumber}')"]`);
-        if (activeTab) {
-            activeTab.classList.add('active');
+        <!-- Виведення інформації -->
+        <div class="main-content" id="content">
+            Місце виведення інформації
+        </div>
+    </div>
+
+    <script>
+        // Функція для показу вмісту лабораторної роботи
+        function showContent(labNumber) {
+            // Оновлюємо активну вкладку
+            const tabs = document.querySelectorAll('.tabs button');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            const activeTab = document.querySelector(`.tabs button[onclick="showContent('${labNumber}')"]`);
+            if (activeTab) {
+                activeTab.classList.add('active');
+            }
+            
+            // Очищаємо основний контент
+            document.getElementById('content').innerHTML = `Вміст для ${labNumber}`;
         }
-        
-        // Очищаємо основний контент
-        document.getElementById('content').innerHTML = '';
-    }
 
-    // Функція для показу секцій лабораторної роботи
-    function showSection(section) {
-        const content = document.getElementById('content');
-        
-        // Інформація для різних секцій
-        const sections = {
-            description: `
-                <h2>Опис предметного середовища</h2>
-                <p>Веб-сайт магазину одягу пропонує зручний і 
- простий досвід покупок. На сайті можна легко 
- переглядати каталог різних видів одягу, фільтрувати 
- їх за категоріями, кольорами, розмірами та цінами, а  
-також додавати товари до кошика для швидкого замовлення.  
-Користувач може створити особистий кабінет, щоб відстежувати свої  
-покупки і управляти своїм замовленням. 
-Сайт містить детальний опис 
- продукту, галерею зображень і інформацію про виробника.  
-Також на сайті розміщена детальна інформація про сам магазин. Завдяки цьому сайт 
- стає місцем, де можна швидко й зручно придбати улюблений одяг, не виходячи з дому.</p>
-            `,
-            theme: `
-                <h2>Тема Мета Місце розташування лаб №1</h2>
-                <p>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
-РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
-</p>
-<p>Мета: придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
-Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+        // Функція для показу секцій лабораторної роботи
+        function showSection(section) {
+            const content = document.getElementById('content');
+            
+            // Інформація для різних секцій
+            const sections = {
+                description: `<h2>Опис предметного середовища</h2><p>Тут опис середовища...</p>`,
+                theme: `<h2>Тема Мета Місце розташування лаб №1</h2><p>Тут текст для теми, мети...</p>`,
+                structure: `<h2>СТРУКТУРА ДОКУМЕНТА</h2><p>Тут структура документа...</p>`,
+                htmlTable: `<h2>HTML-код ТАБЛИЦЬ</h2><pre><code>Тут HTML-код таблиць...</code></pre>`,
+                htmlForm: `<h2>HTML-код ФОРМИ</h2><pre><code>Тут HTML-код форми...</code></pre>`,
+                htmlImages: `<h2>HTML-код ЗОБРАЖЕННЯ</h2><pre><code>Тут HTML-код зображень...</code></pre>`,
+                conclusions: `<h2>ВИСНОВКИ</h2><p>Тут висновки...</p>`
+            };
 
-</p>
-            `,
-            structure: `
-                <h2>СТРУКТУРА ДОКУМЕНТА</h2>
-                <p>Документ містить кілька розділів, таких як: галерея товарів...</p>
-            `,
-            htmlTable: `
-                <h2>HTML-код ТАБЛИЦЬ</h2>
-                <pre><code> <img src="код таблиці лр1.jpg" ></code></pre>
-            `,
-            htmlForm: `
-                <h2>HTML-код ФОРМИ</h2>
-                <pre><code> <img src="код форми лр1.jpg" ></code></pre>
-            `,
-          
-            htmlImages: `
-                <h2>HTML-код ЗОБРАЖЕННЯ</h2>
-                <pre><code><img src="код фото лр1.jpg" ></code></pre>
-            `,
-            conclusions: `
-                <h2>ВИСНОВКИ</h2>
-                <p>Мета: Я придбала практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
-Зробила шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
-</p>
-            `
-        };
-
-        content.innerHTML = sections[section] || 'Інформація не знайдена.';
-    }
-</script>
+            content.innerHTML = sections[section] || 'Інформація не знайдена.';
+        }
+    </script>
 
 </body>
 </html>
