@@ -77,7 +77,7 @@
         }
 
         .tabs button.active {
-            background-color: #EFAF8C;
+            background-color: #EFAF8C; /* Активна вкладка підсвічується іншим кольором */
         }
 
         /* Контейнер для контенту */
@@ -138,6 +138,7 @@
 
     <!-- Вкладки лабораторних робіт -->
     <div class="tabs">
+        <!-- При кліку на кнопку викликається функція showContent для показу відповідної лабораторної роботи -->
         <button class="active" onclick="showContent('lab1')">Лабораторна робота №1</button>
         <button onclick="showContent('lab2')">Лабораторна робота №2</button>
         <button onclick="showContent('lab3')">Лабораторна робота №3</button>
@@ -153,6 +154,7 @@
     <div class="container">
         <!-- Бокова панель -->
         <div class="sidebar">
+            <!-- Кнопки бокової панелі викликають showSection для відображення відповідної секції лабораторної роботи -->
             <button onclick="showSection('description')">Опис предметного середовища</button>
             <button onclick="showSection('theme')">Тема Мета Місце розташування лаб №1</button>
             <button onclick="showSection('structure')">СТРУКТУРА ДОКУМЕНТА</button>
@@ -173,13 +175,13 @@
         function showContent(labNumber) {
             // Оновлюємо активну вкладку
             const tabs = document.querySelectorAll('.tabs button');
-            tabs.forEach(tab => tab.classList.remove('active'));
+            tabs.forEach(tab => tab.classList.remove('active')); // Забираємо клас "active" у всіх вкладок
             const activeTab = document.querySelector(`.tabs button[onclick="showContent('${labNumber}')"]`);
             if (activeTab) {
-                activeTab.classList.add('active');
+                activeTab.classList.add('active'); // Додаємо клас "active" до вибраної вкладки
             }
             
-            // Очищаємо основний контент
+            // Очищаємо основний контент і виводимо інформацію для вибраної лабораторної роботи
             document.getElementById('content').innerHTML = `Вміст для ${labNumber}`;
         }
 
@@ -190,12 +192,7 @@
             // Інформація для різних секцій
             const sections = {
                 description: `<h2>Опис предметного середовища</h2><p>Тут опис середовища...</p>`,
-                theme: `<h2>Тема Мета Місце розташування лаб №1</h2><p>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
-РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
-
-Мета: придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
-Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
-</p>`,
+                theme: `<h2>Тема Мета Місце розташування лаб №1</h2><p>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</p>`,
                 structure: `<h2>СТРУКТУРА ДОКУМЕНТА</h2><p>Тут структура документа...</p>`,
                 htmlTable: `<h2>HTML-код ТАБЛИЦЬ</h2><pre><code>Тут HTML-код таблиць...</code></pre>`,
                 htmlForm: `<h2>HTML-код ФОРМИ</h2><pre><code>Тут HTML-код форми...</code></pre>`,
@@ -203,6 +200,7 @@
                 conclusions: `<h2>ВИСНОВКИ</h2><p>Тут висновки...</p>`
             };
 
+            // Виводимо відповідну секцію або повідомлення, якщо секція не знайдена
             content.innerHTML = sections[section] || 'Інформація не знайдена.';
         }
     </script>
