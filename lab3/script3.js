@@ -25,8 +25,8 @@ function topic() {
         <img src="./images/tema3.jpg" alt="">
         <br><br> 
         <p>Посилання на живу сторінку <b>веб-застосунку</b><br><br>
-            <a href="https://morinaanna.github.io/lab3/">
-           https://morinaanna.github.io/lab4/
+            <a href="https://morinaanna.github.io/lab4/">
+          https://morinaanna.github.io/lab4/
                 
             </a><br><br>
         </p>
