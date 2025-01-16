@@ -29,9 +29,9 @@ function topic() {
                 https://morinaanna.github.io/zwit/
             </a><br><br>
         </p>
-        <p>Посилання на <b>репозиторій завдань лабораторних 6</b> <br><br>
-            <a href="https://github.com/MorinaAnna/lab6">
-               https://github.com/MorinaAnna/lab6
+        <p>Посилання на <b>репозиторій завдань лабораторних 7</b> <br><br>
+            <a href="https://github.com/MorinaAnna/zwit/tree/main/lab7">
+               https://github.com/MorinaAnna/zwit/tree/main/lab7
             </a><br><br>
         </p>
     `;
