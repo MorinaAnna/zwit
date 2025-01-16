@@ -24,17 +24,16 @@ function topic() {
     desc.innerHTML =  `
         <img src="./images/tema7.jpg" alt="">
         <br><br> 
-        <p>Посилання на живу сторінку <b>завдань лабораторної 7</b><br><br>
-            <a href="https://morinaanna.github.io/zwit/"_blank">
-               https://morinaanna.github.io/zwit/
+         <p>Посилання на живу сторінку <b>завдань лабораторних 7</b><br><br>
+            <a href="https://morinaanna.github.io/zwit/lab7/lab7.html">
+                https://morinaanna.github.io/zwit/lab7/lab7.html
             </a><br><br>
         </p>
-        <p>Посилання на <b>репозиторій завдань лабораторної 7</b> <br><br>
-            <a href="https://github.com/MorinaAnna/zwit">
-                https://github.com/MorinaAnna/zwit
+        <p>Посилання на <b>репозиторій завдань лабораторних 6</b> <br><br>
+            <a href="https://github.com/MorinaAnna/lab6">
+               https://github.com/MorinaAnna/lab6
             </a><br><br>
         </p>
-       
     `;
 }
 
