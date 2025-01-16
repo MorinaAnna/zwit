@@ -34,14 +34,7 @@ function topic() {
                 https://github.com/MorinaAnna/lab5
             </a><br><br>
         </p
-        <p>Посилання на живу сторінку <b>звітів</b> <br><br>
-            <>
-              
-        </p>
-        <p>Посилання на <b>репозиторій звітів</b> <br><br>
-            
-            </a><br><br>
-        </p>
+       
     `;
 }
 
