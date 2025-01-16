@@ -76,13 +76,13 @@ function task_2() {
     desc.innerHTML =  `
         <img src="./images/task2.png" alt="" >
         <p>Посилання на живу сторінку <b>завдань 2-3</b> <br><br>
-            <a href=" https://morinaanna.github.io/lr3/">
-                https://morinaanna.github.io/lr3/
+            <a href=" https://morinaanna.github.io/lab3/">
+                https://morinaanna.github.io/lab3/
             </a><br><br>
         </p>
         <p>Посилання на <b>репозиторій завдань 2-3</b> <br><br>
-            <a href="https://github.com/MorinaAnna/lr3" target="_blank">
-                https://github.com/MorinaAnna/lr3
+            <a href="https://github.com/MorinaAnna/lab3">
+               https://github.com/MorinaAnna/lab3
             </a><br><br>
         </p>
     `;
@@ -148,13 +148,13 @@ function task_3() {
     desc.innerHTML =  `
         <img src="./images/task3.png" alt="" >
         <p>Посилання на живу сторінку <b>завдань 2-3</b> <br><br>
-            <a href=" https://morinaanna.github.io/lr3/">
-                 https://morinaanna.github.io/lr3/
+            <a href=" https://morinaanna.github.io/lab3/">
+                 https://morinaanna.github.io/lab3/
             </a><br><br>
         </p>
         <p>Посилання на <b>репозиторій завдань 2-3</b> <br><br>
-            <a href="https://github.com/MorinaAnna/lr3" target="_blank">
-               https://github.com/MorinaAnna/lr3" target="_blank
+            <a href="https://github.com/MorinaAnna/lab3">
+               https://github.com/MorinaAnna/lab3
             </a><br><br>
         </p>
         `;
