@@ -1,0 +1,79 @@
+a{
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+.image{
+    object-fit: cover;
+    height: 150px;
+}
+.image-div{
+    text-align: right;
+    margin-top: -120px;
+}
+.sec-btn{
+    text-align: center;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.sec-btn button{
+    margin-bottom: 10px;
+}
+.sec-lab1{
+    margin: 30px;
+}
+body, button{
+    font-family: Merriweather;
+}
+button{
+    padding: 20px;
+    margin: 2px;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    justify-content: left;
+}
+.desc{
+    margin: 20px;
+    text-align: left;
+}
+.btns-menu{
+    background-color: #E9967A;
+    font-size: 18px;
+    width: 400px;
+    height: 75px;
+    margin-top: 10px;
+}
+.html-el{
+    margin-left: 50px;
+}
+.html-btn{
+    background-color: #E9967A;
+    width: 350px;
+    height: 75px;
+    margin-top: 10px;
+}
+.clicked{
+    background-color: #DC143C;
+    font-size: 18px;
+    width: 400px;
+    height: 75px;
+    margin-top: 10px;
+}
+.choose{
+    background-color: #F08080;
+    text-align: center;
+}
+.clicked1{
+    background-color: #DC143C;
+    width: 350px;
+    height: 75px;
+    margin-top: 10px;
+}
