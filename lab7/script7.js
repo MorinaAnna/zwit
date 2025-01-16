@@ -22,7 +22,7 @@ function topic() {
     desc.textContent = '';
 
     desc.innerHTML =  `
-        <img src="./images/theme.png" alt="">
+        <img src="./images/tema7.jpg" alt="">
         <br><br> 
         <p>Посилання на живу сторінку <b>завдань лабораторної 7</b><br><br>
             <a href=""_blank">
