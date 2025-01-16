@@ -25,8 +25,8 @@ function topic() {
         <img src="./images/tema7.jpg" alt="">
         <br><br> 
          <p>Посилання на живу сторінку <b>завдань лабораторних 7</b><br><br>
-            <a href="https://morinaanna.github.io/zwit/lab7/lab7.html">
-                https://morinaanna.github.io/zwit/lab7/lab7.html
+            <a href="https://morinaanna.github.io/zwit/">
+                https://morinaanna.github.io/zwit/
             </a><br><br>
         </p>
         <p>Посилання на <b>репозиторій завдань лабораторних 6</b> <br><br>
