@@ -30,8 +30,8 @@ function topic() {
             </a><br><br>
         </p>
         <p>Посилання на <b>репозиторій завдань лабораторних 7</b> <br><br>
-            <a href="https://github.com/MorinaAnna/zwit/tree/main/lab7">
-               https://github.com/MorinaAnna/zwit/tree/main/lab7
+            <a href="https://github.com/MorinaAnna/zwit">
+              https://github.com/MorinaAnna/zwit
             </a><br><br>
         </p>
     `;
