@@ -34,16 +34,7 @@ function topic() {
                https://github.com/MorinaAnna/lab6
             </a><br><br>
         </p>
-        <p>Посилання на живу сторінку <b>звітів</b> <br><br>
-            <a href="https://brieflyl.github.io/IC-34_Reports_Perekhrest/" target="_blank">
-                https://brieflyl.github.io/IC-34_Reports_Perekhrest/
-            </a><br><br>
-        </p>
-        <p>Посилання на <b>репозиторій звітів</b> <br><br>
-            <a href="https://github.com/brieflyl/IC-34_Reports_Perekhrest" target="_blank">
-                https://github.com/brieflyl/IC-34_Reports_Perekhrest
-            </a><br><br>
-        </p>
+        
     `;
 }
 
