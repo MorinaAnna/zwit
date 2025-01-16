@@ -22,7 +22,7 @@ function topic() {
     desc.textContent = '';
 
     desc.innerHTML =  `
-        <img src="./images/theme.png" alt="">
+        <img src="./images/tema6.jpg" alt="">
         <br><br> 
         <p>Посилання на живу сторінку <b>завдань лабораторних 6</b><br><br>
             <a href="https://morinaanna.github.io/lab6/">
